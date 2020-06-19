@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/ProyectoFinal"
+        android:textColor="#090909"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="130dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/logotesoem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="133dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="@string/imagen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/imagen" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="118dp"
+        android:layout_height="118dp"
+        android:contentDescription="@string/android"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtjson"
+        app:srcCompat="@drawable/images" />
+
+    <EditText
+        android:id="@+id/txtnombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="@string/nombre"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColorHint="#673AB7"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <EditText
+        android:id="@+id/txtmatricula"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="@string/matricula"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColorHint="#673AB7"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnombre" />
+
+    <EditText
+        android:id="@+id/txtcorreo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="@string/correo"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColorHint="#673AB7"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtmatricula" />
+
+    <EditText
+        android:id="@+id/txtcalificacion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="@string/calificación"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColorHint="#673AB7"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtcorreo" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="CJSON"
+        android:text="@string/convertirjson"
+        android:textColor="#03CA55"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtcalificacion" />
+
+    <EditText
+        android:id="@+id/txtjson"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="@string/rjson"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColorHint="#673AB7"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

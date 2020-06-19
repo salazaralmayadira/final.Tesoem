@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">final.Tesoem</string>
+    <string name="ProyectoFinal">PROYECTO FINAL</string>
+    <string name="logotesoem">Logo</string>
+    <string name="imagen">Imagen</string>
+    <string name="nombre">Ingresa tu nombre</string>
+    <string name="matricula">Ingresa tu matricula</string>
+    <string name="correo">Ingresa tu correo</string>
+    <string name="calificación">Calificación final</string>
+    <string name="convertirjson">JSON</string>
+    <string name="rjson">Datos a Mostrar</string>
+    <string name="android">Android</string>
+</resources>
